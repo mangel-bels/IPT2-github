@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 public class Main {
-
+    public int add (int a, int b){
+        return a + b;
+    }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Main calculator = new Main();
