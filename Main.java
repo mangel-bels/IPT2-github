@@ -10,6 +10,14 @@ public class Main {
     public int multiply (int a, int b){
         return a * b;
     }
+    public int divide (int a, int b)
+        throws ArithmeticException {
+            if (b == 0) {
+                throw new ArithmeticException ("Cannot divide by zero");
+            }
+            return a/b;
+        }
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Main calculator = new Main();
